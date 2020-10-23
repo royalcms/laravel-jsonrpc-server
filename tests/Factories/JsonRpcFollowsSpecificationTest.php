@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Tests\Factories;
 
-use AvtoDev\JsonRpc\Kernel;
+use Royalcms\Laravel\JsonRpcServer\Kernel;
 use Tarampampam\Wrappers\Json;
 use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
 use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;

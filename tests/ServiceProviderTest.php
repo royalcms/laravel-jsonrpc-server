@@ -12,7 +12,7 @@ use Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory;
 use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\ServiceProvider<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\ServiceProvider<extended>
  */
 class ServiceProviderTest extends AbstractTestCase
 {

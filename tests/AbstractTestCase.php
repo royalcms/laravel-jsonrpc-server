@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Tests;
 
-use Royalcms\Laravel\JsonRpcServer\ServiceProvider;
+use Royalcms\Laravel\JsonRpcServer\JsonRpcServerServiceProvider;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Testing\TestCase;
 
@@ -22,7 +22,7 @@ abstract class AbstractTestCase extends TestCase
 
         $app->make(Kernel::class)->bootstrap();
 
-        $app->register(ServiceProvider::class);
+        $app->register(JsonRpcServerServiceProvider::class);
 
         return $app;
     }

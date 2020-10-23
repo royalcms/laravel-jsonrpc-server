@@ -8,7 +8,7 @@ use Royalcms\Laravel\JsonRpcServer\RpcRouter;
 use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\RpcRouter<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\RpcRouter<extended>
  */
 class RpcRouterTest extends AbstractTestCase
 {
