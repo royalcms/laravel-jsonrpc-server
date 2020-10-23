@@ -1,9 +1,9 @@
 <?php
 
-namespace AvtoDev\JsonRpc;
+namespace Royalcms\Laravel\JsonRpcServer;
 
-use AvtoDev\JsonRpc\Requests\RequestsStackInterface;
-use AvtoDev\JsonRpc\Responses\ResponsesStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStackInterface;
 
 interface KernelInterface
 {

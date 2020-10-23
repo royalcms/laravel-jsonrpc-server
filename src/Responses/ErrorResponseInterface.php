@@ -1,8 +1,8 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Responses;
 
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
 
 /**
  * @see ErrorResponse

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Traits;
+namespace Royalcms\Laravel\JsonRpcServer\Traits;
 
 use InvalidArgumentException;
 

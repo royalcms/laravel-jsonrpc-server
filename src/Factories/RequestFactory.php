@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Factories;
+namespace Royalcms\Laravel\JsonRpcServer\Factories;
 
 use Throwable;
 use InvalidArgumentException;
 use Tarampampam\Wrappers\Json;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Errors\ParseError;
-use AvtoDev\JsonRpc\Errors\ServerError;
-use AvtoDev\JsonRpc\Errors\InternalError;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Requests\RequestsStack;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Errors\InvalidParamsError;
-use AvtoDev\JsonRpc\Errors\InvalidRequestError;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Responses\ResponseInterface;
-use AvtoDev\JsonRpc\Requests\RequestsStackInterface;
-use AvtoDev\JsonRpc\Responses\ErrorResponseInterface;
-use AvtoDev\JsonRpc\Responses\ResponsesStackInterface;
-use AvtoDev\JsonRpc\Responses\SuccessResponseInterface;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Errors\ParseError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ServerError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStack;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 

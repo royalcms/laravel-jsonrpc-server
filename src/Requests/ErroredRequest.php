@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Requests;
 
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 class ErroredRequest implements ErroredRequestInterface
 {

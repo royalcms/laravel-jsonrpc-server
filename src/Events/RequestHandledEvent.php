@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Events;
+namespace Royalcms\Laravel\JsonRpcServer\Events;
 
 use AvtoDev\JsonRpc\Requests\RequestInterface;
 

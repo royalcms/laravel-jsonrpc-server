@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace AvtoDev\JsonRpc\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Requests;
 
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 class Request implements RequestInterface
 {

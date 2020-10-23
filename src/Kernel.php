@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc;
+namespace Royalcms\Laravel\JsonRpcServer;
 
 use Throwable;
-use AvtoDev\JsonRpc\Errors\InternalError;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
-use AvtoDev\JsonRpc\Responses\ResponsesStack;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStack;
 use Illuminate\Contracts\Container\Container;
-use AvtoDev\JsonRpc\Requests\RequestInterface;
-use AvtoDev\JsonRpc\Responses\SuccessResponse;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Events\RequestHandledEvent;
-use AvtoDev\JsonRpc\Requests\RequestsStackInterface;
-use AvtoDev\JsonRpc\Requests\ErroredRequestInterface;
-use AvtoDev\JsonRpc\Responses\ResponsesStackInterface;
-use AvtoDev\JsonRpc\Events\ErroredRequestDetectedEvent;
-use AvtoDev\JsonRpc\Events\RequestHandledExceptionEvent;
-use AvtoDev\JsonRpc\Requests\RequestInterface as RPCRequest;
-use AvtoDev\JsonRpc\MethodParameters\MethodParametersInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponse;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledEvent;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Events\ErroredRequestDetectedEvent;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledExceptionEvent;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface as RPCRequest;
+use Royalcms\Laravel\JsonRpcServer\MethodParameters\MethodParametersInterface;
 use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
 
 class Kernel implements KernelInterface

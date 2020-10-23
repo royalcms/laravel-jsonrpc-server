@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Responses;
 
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 class ErrorResponse implements ErrorResponseInterface
 {

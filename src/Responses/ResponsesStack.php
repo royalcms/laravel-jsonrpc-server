@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace AvtoDev\JsonRpc\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Responses;
 
 use ArrayIterator;
 use LogicException;

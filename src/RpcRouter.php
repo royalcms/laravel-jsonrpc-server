@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc;
+namespace Royalcms\Laravel\JsonRpcServer;
 
 use Illuminate\Support\Facades\Facade;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Requests\RequestInterface as RPCRequest;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface as RPCRequest;
 
 /**
  * @method static void on(string $method_name, $do_action)

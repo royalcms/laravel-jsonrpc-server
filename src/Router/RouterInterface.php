@@ -1,6 +1,6 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Router;
+namespace Royalcms\Laravel\JsonRpcServer\Router;
 
 use Exception;
 use InvalidArgumentException;

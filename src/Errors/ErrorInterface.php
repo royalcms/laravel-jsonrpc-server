@@ -1,6 +1,6 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Errors;
 
 interface ErrorInterface
 {

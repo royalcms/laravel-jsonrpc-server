@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Responses;
 
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 class SuccessResponse implements SuccessResponseInterface
 {

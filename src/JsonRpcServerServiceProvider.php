@@ -9,7 +9,7 @@ use AvtoDev\JsonRpc\Router\RouterInterface;
 use AvtoDev\JsonRpc\Factories\RequestFactory;
 use AvtoDev\JsonRpc\Factories\FactoryInterface;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class JsonRpcServerServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Register RPC services.

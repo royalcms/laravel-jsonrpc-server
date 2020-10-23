@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\MethodParameters;
+namespace Royalcms\Laravel\JsonRpcServer\MethodParameters;
 
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 class BaseMethodParameters implements MethodParametersInterface
 {

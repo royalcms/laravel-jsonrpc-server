@@ -1,9 +1,9 @@
 <?php
 
-namespace AvtoDev\JsonRpc\MethodParameters;
+namespace Royalcms\Laravel\JsonRpcServer\MethodParameters;
 
 /**
- * @see \AvtoDev\JsonRpc\Router\Router::call
+ * @see \Royalcms\Laravel\JsonRpcServer\Router\Router::call
  *
  * DI is allowed in constructors.
  */

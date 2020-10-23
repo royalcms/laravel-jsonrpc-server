@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Http\Controllers;
+namespace Royalcms\Laravel\JsonRpcServer\Http\Controllers;
 
 use Throwable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use AvtoDev\JsonRpc\KernelInterface;
-use AvtoDev\JsonRpc\Errors\ServerError;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\KernelInterface;
+use Royalcms\Laravel\JsonRpcServer\Errors\ServerError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
 use Symfony\Component\HttpFoundation\Response;
-use AvtoDev\JsonRpc\Factories\FactoryInterface;
+use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
 
 class RpcController extends Controller
 {
@@ -21,8 +21,8 @@ class RpcController extends Controller
      * @param FactoryInterface $factory
      * @param KernelInterface  $rpc
      *
-     * @throws \AvtoDev\JsonRpc\Errors\InvalidRequestError
-     * @throws \AvtoDev\JsonRpc\Errors\ParseError
+     * @throws \Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError
+     * @throws \Royalcms\Laravel\JsonRpcServer\Errors\ParseError
      *
      * @return Response
      */

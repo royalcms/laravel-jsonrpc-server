@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Errors;
 
 use Exception;
 use Throwable;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 abstract class AbstractError extends Exception implements ErrorInterface
 {

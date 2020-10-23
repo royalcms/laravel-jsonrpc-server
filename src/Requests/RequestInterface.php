@@ -1,6 +1,6 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Requests;
 
 /**
  * @see Request

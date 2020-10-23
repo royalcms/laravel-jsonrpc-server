@@ -1,6 +1,6 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Responses;
 
 use Countable;
 use LogicException;

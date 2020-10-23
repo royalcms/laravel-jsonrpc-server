@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Events;
+namespace Royalcms\Laravel\JsonRpcServer\Events;
 
 use Throwable;
-use AvtoDev\JsonRpc\Requests\RequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface;
 
 class RequestHandledExceptionEvent
 {

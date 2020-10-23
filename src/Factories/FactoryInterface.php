@@ -1,15 +1,15 @@
 <?php
 
-namespace AvtoDev\JsonRpc\Factories;
+namespace Royalcms\Laravel\JsonRpcServer\Factories;
 
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Errors\ParseError;
-use AvtoDev\JsonRpc\Errors\InvalidRequestError;
-use AvtoDev\JsonRpc\Responses\ResponseInterface;
-use AvtoDev\JsonRpc\Requests\RequestsStackInterface;
-use AvtoDev\JsonRpc\Responses\ErrorResponseInterface;
-use AvtoDev\JsonRpc\Responses\ResponsesStackInterface;
-use AvtoDev\JsonRpc\Responses\SuccessResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Errors\ParseError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponseInterface;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 
 /**

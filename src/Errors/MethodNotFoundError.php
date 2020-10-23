@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Errors;
 
 use Throwable;
 

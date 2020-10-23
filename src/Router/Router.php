@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Router;
+namespace Royalcms\Laravel\JsonRpcServer\Router;
 
 use Closure;
 use InvalidArgumentException;
