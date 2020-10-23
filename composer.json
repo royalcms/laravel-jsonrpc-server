@@ -1,10 +1,11 @@
 {
-    "name": "avto-dev/json-rpc-laravel",
-    "description": "Json Rpc package",
+    "name": "royalcms/laravel-jsonrpc-server",
+    "description": "JsonRpc Server for Laravel Package.",
     "keywords": [
+        "royalcms",
         "json",
         "laravel",
-        "rpc"
+        "jsonrpc"
     ],
     "type": "library",
     "license": "MIT",
@@ -12,8 +13,16 @@
         {
             "name": "Avto Develop",
             "homepage": "https://github.com/avto-dev"
+        },
+        {
+            "name": "Royal Wang",
+            "email": "hxroyal@gmail.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/royalcms/laravel-jsonrpc-server/issues",
+        "source": "https://github.com/royalcms/laravel-jsonrpc-server"
+    },
     "require": {
         "php": "^7.2",
         "illuminate/contracts": "~6.0 || ~7.0 || ~8.0",
@@ -30,21 +39,21 @@
     },
     "autoload": {
         "psr-4": {
-            "AvtoDev\\JsonRpc\\": "src/"
+            "Royalcms\\Laravel\\JsonRpcServer\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AvtoDev\\JsonRpc\\Tests\\": "tests/"
+            "Royalcms\\Laravel\\JsonRpcServer\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AvtoDev\\JsonRpc\\ServiceProvider"
+                "Royalcms\\Laravel\\JsonRpcServer\\JsonRpcServerServiceProvider"
             ],
             "aliases": {
-                "RpcRouter": "AvtoDev\\JsonRpc\\RpcRouter"
+                "RpcRouter": "Royalcms\\Laravel\\JsonRpcServer\\RpcRouter"
             }
         }
     },
@@ -60,9 +69,5 @@
             "@phpstan",
             "@phpunit-cover"
         ]
-    },
-    "support": {
-        "issues": "https://github.com/avto-dev/json-rpc-laravel/issues",
-        "source": "https://github.com/avto-dev/json-rpc-laravel"
     }
 }
