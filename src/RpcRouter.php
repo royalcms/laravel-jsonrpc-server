@@ -14,8 +14,8 @@ use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface as RPCRequest;
  * @method static mixed call(RPCRequest $request)
  * @method static array<string> methods()
  *
- * @see \AvtoDev\JsonRpc\Router\RouterInterface
- * @see \AvtoDev\JsonRpc\Router\Router
+ * @see \Royalcms\Laravel\JsonRpcServer\Router\RouterInterface
+ * @see \Royalcms\Laravel\JsonRpcServer\Router\Router
  */
 class RpcRouter extends Facade
 {

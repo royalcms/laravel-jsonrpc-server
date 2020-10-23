@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Events;
 
-use AvtoDev\JsonRpc\Requests\ErroredRequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequestInterface;
 
 class ErroredRequestDetectedEvent
 {

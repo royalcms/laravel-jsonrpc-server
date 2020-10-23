@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc;
+namespace Royalcms\Laravel\JsonRpcServer;
 
-use AvtoDev\JsonRpc\Router\Router;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Factories\RequestFactory;
-use AvtoDev\JsonRpc\Factories\FactoryInterface;
+use Royalcms\Laravel\JsonRpcServer\Router\Router;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory;
+use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
 
 class JsonRpcServerServiceProvider extends \Illuminate\Support\ServiceProvider
 {

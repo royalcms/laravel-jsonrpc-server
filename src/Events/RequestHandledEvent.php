@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Events;
 
-use AvtoDev\JsonRpc\Requests\RequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface;
 
 class RequestHandledEvent
 {
