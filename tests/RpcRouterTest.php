@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests;
 
-use AvtoDev\JsonRpc\RpcRouter;
-use AvtoDev\JsonRpc\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\RpcRouter;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
 
 /**
  * @covers \AvtoDev\JsonRpc\RpcRouter<extended>

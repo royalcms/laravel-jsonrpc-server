@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Events;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Events;
 
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Errors\InvalidParamsError;
-use AvtoDev\JsonRpc\Events\ErroredRequestDetectedEvent;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError;
+use Royalcms\Laravel\JsonRpcServer\Events\ErroredRequestDetectedEvent;
 
 /**
- * @covers \AvtoDev\JsonRpc\Events\ErroredRequestDetectedEvent<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Events\ErroredRequestDetectedEvent<extended>
  */
 class ErroredRequestDetectedEventTest extends AbstractTestCase
 {

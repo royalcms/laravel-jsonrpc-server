@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Errors;
 
-use AvtoDev\JsonRpc\Errors\ParseError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ParseError;
 
 /**
- * @covers \AvtoDev\JsonRpc\Errors\ParseError<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Errors\ParseError<extended>
  */
 class ParseErrorTest extends AbstractErrorTestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Events;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Events;
 
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Events\RequestHandledEvent;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledEvent;
 
 /**
- * @covers \AvtoDev\JsonRpc\Events\RequestHandledEvent<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Events\RequestHandledEvent<extended>
  */
 class RequestHandledEventTest extends AbstractTestCase
 {

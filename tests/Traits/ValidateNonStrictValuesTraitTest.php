@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Traits;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Traits;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 
 /**
- * @covers \AvtoDev\JsonRpc\Traits\ValidateNonStrictValuesTrait<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait<extended>
  */
 class ValidateNonStrictValuesTraitTest extends AbstractTestCase
 {

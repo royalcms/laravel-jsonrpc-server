@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\MethodParameters;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\MethodParameters;
 
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\MethodParameters\BaseMethodParameters;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\MethodParameters\BaseMethodParameters;
 
 /**
- * @covers \AvtoDev\JsonRpc\MethodParameters\BaseMethodParameters<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\MethodParameters\BaseMethodParameters<extended>
  */
 class BaseMethodParametersTest extends AbstractTestCase
 {

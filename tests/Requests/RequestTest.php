@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Requests;
 
 use stdClass;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Requests\RequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\Requests\Request<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Requests\Request<extended>
  */
 class RequestTest extends AbstractTestCase
 {

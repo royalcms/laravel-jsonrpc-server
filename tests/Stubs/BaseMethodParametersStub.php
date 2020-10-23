@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Stubs;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Stubs;
 
-use AvtoDev\JsonRpc\MethodParameters\BaseMethodParameters;
+use Royalcms\Laravel\JsonRpcServer\MethodParameters\BaseMethodParameters;
 
 class BaseMethodParametersStub extends BaseMethodParameters
 {

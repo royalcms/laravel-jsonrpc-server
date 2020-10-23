@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests;
 
 use stdClass;
 use Exception;
-use AvtoDev\JsonRpc\Kernel;
+use Royalcms\Laravel\JsonRpcServer\Kernel;
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\KernelInterface;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Errors\ServerError;
-use AvtoDev\JsonRpc\Errors\InternalError;
-use AvtoDev\JsonRpc\Requests\RequestsStack;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
-use AvtoDev\JsonRpc\Responses\SuccessResponse;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Events\RequestHandledEvent;
-use AvtoDev\JsonRpc\Events\ErroredRequestDetectedEvent;
-use AvtoDev\JsonRpc\Events\RequestHandledExceptionEvent;
-use AvtoDev\JsonRpc\Tests\Stubs\BaseMethodParametersStub;
+use Royalcms\Laravel\JsonRpcServer\KernelInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Errors\ServerError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStack;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponse;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledEvent;
+use Royalcms\Laravel\JsonRpcServer\Events\ErroredRequestDetectedEvent;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledExceptionEvent;
+use Royalcms\Laravel\JsonRpcServer\Tests\Stubs\BaseMethodParametersStub;
 
 /**
- * @covers \AvtoDev\JsonRpc\Kernel<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Kernel<extended>
  */
 class KernelTest extends AbstractTestCase
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests;
 
-use AvtoDev\JsonRpc\ServiceProvider;
+use Royalcms\Laravel\JsonRpcServer\ServiceProvider;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Testing\TestCase;
 

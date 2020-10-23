@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Responses;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Responses\ErrorResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponseInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\Responses\ErrorResponse<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse<extended>
  */
 class ErrorResponseTest extends AbstractTestCase
 {

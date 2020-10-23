@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Errors;
 
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
 
 /**
- * @covers \AvtoDev\JsonRpc\Errors\MethodNotFoundError<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError<extended>
  */
 class MethodNotFoundErrorTest extends AbstractErrorTestCase
 {

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Requests;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Errors\InvalidParamsError;
-use AvtoDev\JsonRpc\Errors\InvalidRequestError;
-use AvtoDev\JsonRpc\Requests\ErroredRequestInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequestInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\Requests\ErroredRequest<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest<extended>
  */
 class ErroredRequestTest extends AbstractTestCase
 {

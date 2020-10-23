@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests;
 
-use AvtoDev\JsonRpc\Kernel;
-use AvtoDev\JsonRpc\Router\Router;
-use AvtoDev\JsonRpc\KernelInterface;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Factories\RequestFactory;
-use AvtoDev\JsonRpc\Factories\FactoryInterface;
+use Royalcms\Laravel\JsonRpcServer\Kernel;
+use Royalcms\Laravel\JsonRpcServer\Router\Router;
+use Royalcms\Laravel\JsonRpcServer\KernelInterface;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory;
+use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
 
 /**
  * @covers \AvtoDev\JsonRpc\ServiceProvider<extended>

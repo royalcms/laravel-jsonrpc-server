@@ -2,20 +2,20 @@
 
 declare(strict_types = 1);
 
-namespace AvtoDev\JsonRpc\Tests\Http\Controllers;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Http\Controllers;
 
 use Mockery as m;
 use RuntimeException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\KernelInterface;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Http\Controllers\RpcController;
+use Royalcms\Laravel\JsonRpcServer\KernelInterface;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Http\Controllers\RpcController;
 use Illuminate\Contracts\Routing\Registrar as HttpRegistrar;
 
 /**
- * @covers \AvtoDev\JsonRpc\Http\Controllers\RpcController<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Http\Controllers\RpcController<extended>
  */
 class RpcControllerTest extends AbstractTestCase
 {

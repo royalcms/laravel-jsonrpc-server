@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Errors;
 
-use AvtoDev\JsonRpc\Errors\InvalidRequestError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError;
 
 /**
- * @covers \AvtoDev\JsonRpc\Errors\InvalidRequestError<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError<extended>
  */
 class InvalidRequestErrorTest extends AbstractErrorTestCase
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Errors;
 
-use AvtoDev\JsonRpc\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
 
 /**
- * @covers \AvtoDev\JsonRpc\Errors\InternalError<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Errors\InternalError<extended>
  */
 class InternalErrorTest extends AbstractErrorTestCase
 {

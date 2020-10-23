@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Errors;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Errors;
 
-use AvtoDev\JsonRpc\Errors\InvalidParamsError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError;
 
 /**
- * @covers \AvtoDev\JsonRpc\Errors\InvalidParamsError<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError<extended>
  */
 class InvalidParamsErrorTest extends AbstractErrorTestCase
 {

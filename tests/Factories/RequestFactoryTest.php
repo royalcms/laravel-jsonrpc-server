@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Factories;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Factories;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Tarampampam\Wrappers\Json;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Errors\ParseError;
-use AvtoDev\JsonRpc\Errors\ServerError;
-use AvtoDev\JsonRpc\Errors\InternalError;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
-use AvtoDev\JsonRpc\Factories\RequestFactory;
-use AvtoDev\JsonRpc\Responses\ResponsesStack;
-use AvtoDev\JsonRpc\Errors\InvalidParamsError;
-use AvtoDev\JsonRpc\Responses\SuccessResponse;
-use AvtoDev\JsonRpc\Errors\InvalidRequestError;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Factories\FactoryInterface;
-use AvtoDev\JsonRpc\Responses\ResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Errors\ParseError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ServerError;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStack;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidParamsError;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponse;
+use Royalcms\Laravel\JsonRpcServer\Errors\InvalidRequestError;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
+use Royalcms\Laravel\JsonRpcServer\Responses\ResponseInterface;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 
 /**
- * @covers \AvtoDev\JsonRpc\Factories\RequestFactory<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory<extended>
  */
 class RequestFactoryTest extends AbstractTestCase
 {

@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Requests;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Requests;
 
 use LogicException;
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Requests\RequestsStack;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Requests\ErroredRequest;
-use AvtoDev\JsonRpc\Errors\MethodNotFoundError;
-use AvtoDev\JsonRpc\Requests\RequestsStackInterface;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStack;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Requests\ErroredRequest;
+use Royalcms\Laravel\JsonRpcServer\Errors\MethodNotFoundError;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestsStackInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\Requests\RequestsStack<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Requests\RequestsStack<extended>
  */
 class RequestsStackTest extends AbstractTestCase
 {

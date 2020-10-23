@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Factories;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Factories;
 
 use AvtoDev\JsonRpc\Kernel;
 use Tarampampam\Wrappers\Json;
-use AvtoDev\JsonRpc\Errors\ErrorInterface;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Responses\ErrorResponse;
-use AvtoDev\JsonRpc\Factories\FactoryInterface;
-use AvtoDev\JsonRpc\MethodParameters\BaseMethodParameters;
+use Royalcms\Laravel\JsonRpcServer\Errors\ErrorInterface;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Responses\ErrorResponse;
+use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
+use Royalcms\Laravel\JsonRpcServer\MethodParameters\BaseMethodParameters;
 
 /**
  * @coversNothing

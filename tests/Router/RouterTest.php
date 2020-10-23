@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Router;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Router;
 
 use Mockery as m;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Router\Router;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Router\RouterInterface;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Router\Router;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
 use Illuminate\Contracts\Foundation\Application;
-use AvtoDev\JsonRpc\MethodParameters\BaseMethodParameters;
-use AvtoDev\JsonRpc\Requests\RequestInterface as RPCRequest;
+use Royalcms\Laravel\JsonRpcServer\MethodParameters\BaseMethodParameters;
+use Royalcms\Laravel\JsonRpcServer\Requests\RequestInterface as RPCRequest;
 
 /**
  * @group  router
- * @covers \AvtoDev\JsonRpc\Router\Router<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Router\Router<extended>
  */
 class RouterTest extends AbstractTestCase
 {

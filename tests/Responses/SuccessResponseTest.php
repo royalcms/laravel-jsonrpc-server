@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Responses;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Responses;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Responses\SuccessResponse;
-use AvtoDev\JsonRpc\Responses\SuccessResponseInterface;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponse;
+use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponseInterface;
 
 /**
- * @covers \AvtoDev\JsonRpc\Responses\SuccessResponse<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponse<extended>
  */
 class SuccessResponseTest extends AbstractTestCase
 {

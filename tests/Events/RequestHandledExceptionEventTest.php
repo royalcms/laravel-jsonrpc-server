@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace AvtoDev\JsonRpc\Tests\Events;
+namespace Royalcms\Laravel\JsonRpcServer\Tests\Events;
 
 use Illuminate\Support\Str;
-use AvtoDev\JsonRpc\Requests\Request;
-use AvtoDev\JsonRpc\Errors\InternalError;
-use AvtoDev\JsonRpc\Tests\AbstractTestCase;
-use AvtoDev\JsonRpc\Events\RequestHandledExceptionEvent;
+use Royalcms\Laravel\JsonRpcServer\Requests\Request;
+use Royalcms\Laravel\JsonRpcServer\Errors\InternalError;
+use Royalcms\Laravel\JsonRpcServer\Tests\AbstractTestCase;
+use Royalcms\Laravel\JsonRpcServer\Events\RequestHandledExceptionEvent;
 
 /**
- * @covers \AvtoDev\JsonRpc\Events\RequestHandledExceptionEvent<extended>
+ * @covers \Royalcms\Laravel\JsonRpcServer\Events\RequestHandledExceptionEvent<extended>
  */
 class RequestHandledExceptionEventTest extends AbstractTestCase
 {
