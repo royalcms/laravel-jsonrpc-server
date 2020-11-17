@@ -24,7 +24,7 @@
         "source": "https://github.com/royalcms/laravel-jsonrpc-server"
     },
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "illuminate/contracts": "~6.0 || ~7.0 || ~8.0",
         "illuminate/support": "~6.0 || ~7.0 || ~8.0",
         "illuminate/http": "~6.0 || ~7.0 || ~8.0",
