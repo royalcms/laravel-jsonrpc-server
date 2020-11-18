@@ -37,8 +37,8 @@ class AuthUser
 
         foreach ($users as $user => $credentials) {
             if (
-                password_verify($username, reset($credentials)) &&
-                password_verify($password, end($credentials))
+                password_verify(reset($credentials), $username) &&
+                password_verify(end($credentials), $password)
             ) {
                 $this->currentUser = $user;
 
