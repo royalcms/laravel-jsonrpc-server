@@ -11,6 +11,35 @@ use Royalcms\Laravel\JsonRpcServer\Factories\FactoryInterface;
 
 class JsonRpcServerServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publish();
+    }
+
+    /**
+     * Publish config file.
+     */
+    protected function publish()
+    {
+        $source = realpath($raw = __DIR__.'/../config/basic-auth.php') ?: $raw;
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                $source => config_path('basic-auth.php'),
+            ]);
+        }
+
+        if (! $this->app->configurationIsCached()) {
+            $this->mergeConfigFrom($source, 'basic-auth');
+        }
+    }
+
     /**
      * Register RPC services.
      *
