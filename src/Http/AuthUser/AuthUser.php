@@ -4,21 +4,16 @@
 namespace Royalcms\Laravel\JsonRpcServer\Http\AuthUser;
 
 
-class AuthUser
+class AuthUser implements AuthUserInterface
 {
     /**
      * @var array
      */
     protected $users;
 
-    /**
-     * @var string
-     */
-    protected $currentUser;
-
-    public function __construct(array $users = [])
+    public function __construct()
     {
-        $this->users = $users;
+        $this->users = config('basic-auth.users');
     }
 
     /**
@@ -37,11 +32,9 @@ class AuthUser
 
         foreach ($users as $user => $credentials) {
             if (
-                password_verify(reset($credentials), $username) &&
+                reset($credentials) == $username &&
                 password_verify(end($credentials), $password)
             ) {
-                $this->currentUser = $user;
-
                 return true;
             }
         }
@@ -60,14 +53,6 @@ class AuthUser
         }
 
         return $this->users;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCurrentUser()
-    {
-        return $this->currentUser;
     }
 
 }
