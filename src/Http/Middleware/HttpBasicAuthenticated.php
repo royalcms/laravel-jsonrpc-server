@@ -6,6 +6,7 @@ namespace Royalcms\Laravel\JsonRpcServer\Http\Middleware;
 
 use Closure;
 use Royalcms\Laravel\JsonRpcServer\Http\AuthUser\AuthUser;
+use Royalcms\Laravel\JsonRpcServer\Http\AuthUser\AuthUserInterface;
 
 class HttpBasicAuthenticated
 {
@@ -28,8 +29,7 @@ class HttpBasicAuthenticated
         // This example is vulnerable to a timing attack and uses a plaintext password
         // The "password_verify" function can protect you from those issues:
         // http://php.net/manual/en/function.password-verify.php
-        $config = config('basic-auth.users');
-        return (new AuthUser($config))->verify($username, $password, 'default');
+        return royalcms(AuthUserInterface::class)->verify($username, $password);
     }
 
     private static function errorUnauthenticated()
