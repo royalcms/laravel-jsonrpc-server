@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer;
 
+use Royalcms\Laravel\JsonRpcServer\Http\AuthUser\AuthUser;
+use Royalcms\Laravel\JsonRpcServer\Http\AuthUser\AuthUserInterface;
 use Royalcms\Laravel\JsonRpcServer\Router\Router;
 use Royalcms\Laravel\JsonRpcServer\Router\RouterInterface;
 use Royalcms\Laravel\JsonRpcServer\Factories\RequestFactory;
@@ -20,6 +22,9 @@ class JsonRpcServerServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publish();
+
+        //bind class
+        $this->app->bind(AuthUserInterface::class, AuthUser::class);
     }
 
     /**
