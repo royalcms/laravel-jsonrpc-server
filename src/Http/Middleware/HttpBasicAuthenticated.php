@@ -29,7 +29,7 @@ class HttpBasicAuthenticated
         // This example is vulnerable to a timing attack and uses a plaintext password
         // The "password_verify" function can protect you from those issues:
         // http://php.net/manual/en/function.password-verify.php
-        return royalcms(AuthUserInterface::class)->verify($username, $password);
+        return app(AuthUserInterface::class)->verify($username, $password);
     }
 
     private static function errorUnauthenticated()
