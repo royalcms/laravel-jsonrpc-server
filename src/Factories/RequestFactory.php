@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Factories;
 
-use JsonException;
 use Throwable;
 use InvalidArgumentException;
 use Royalcms\Laravel\JsonRpcServer\Requests\Request;
@@ -24,7 +23,6 @@ use Royalcms\Laravel\JsonRpcServer\Responses\ResponsesStackInterface;
 use Royalcms\Laravel\JsonRpcServer\Responses\SuccessResponseInterface;
 use Royalcms\Laravel\JsonRpcServer\Traits\ValidateNonStrictValuesTrait;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
-use function json_decode;
 
 class RequestFactory implements FactoryInterface
 {
@@ -51,7 +49,7 @@ class RequestFactory implements FactoryInterface
          */
         try {
             $raw_requests = json_decode($json_string, false, 512, $options);
-        } catch (JsonException $e) {
+        } catch (JsonEncodeDecodeException $e) {
             throw new ParseError(null, 0, $e, $e);
         }
 
@@ -144,7 +142,7 @@ class RequestFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      */
     public function errorToHttpResponse(ErrorResponseInterface $error, int $options = 0): HttpResponse
     {
@@ -158,7 +156,7 @@ class RequestFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      */
     public function errorResponseToJsonString(ErrorResponseInterface $response, int $options = 0): string
     {
@@ -189,13 +187,13 @@ class RequestFactory implements FactoryInterface
             $result['error']['data'] = $data;
         }
 
-        return json_encode($result, $options);
+        return Json::encode($result, $options);
     }
 
     /**
      * {@inheritdoc}
      *
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      */
     public function responsesToHttpResponse(ResponsesStackInterface $responses, int $options = 0): HttpResponse
     {
@@ -218,7 +216,7 @@ class RequestFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      */
     public function responsesStackToJsonString(ResponsesStackInterface $stack, int $options = 0): ?string
     {
@@ -246,7 +244,7 @@ class RequestFactory implements FactoryInterface
      * @param int               $options
      *
      * @throws InvalidArgumentException
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      *
      * @return string
      */
@@ -266,11 +264,11 @@ class RequestFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @throws JsonException
+     * @throws JsonEncodeDecodeException
      */
     public function successResponseToJsonString(SuccessResponseInterface $response, int $options = 0): string
     {
-        return json_encode([
+        return Json::encode([
             'jsonrpc' => '2.0',
             'result'  => $response->getResult(),
             'id'      => $response->getId(),
