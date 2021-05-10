@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Royalcms\Laravel\JsonRpcServer\Factories;
 
+use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
+use Tarampampam\Wrappers\Json;
 use Throwable;
 use InvalidArgumentException;
 use Royalcms\Laravel\JsonRpcServer\Requests\Request;
@@ -48,7 +50,7 @@ class RequestFactory implements FactoryInterface
          * <-- {"jsonrpc": "2.0", "error": {"code": -32700, "message": "Parse error"}, "id": null}
          */
         try {
-            $raw_requests = json_decode($json_string, false, 512, $options);
+            $raw_requests = Json::decode($json_string, false, 512, $options);
         } catch (JsonEncodeDecodeException $e) {
             throw new ParseError(null, 0, $e, $e);
         }
